@@ -36,7 +36,7 @@
 
 This project is a **content-based movie recommendation system** built entirely in Python. Given any movie title from the TMDB 5000 dataset, the system analyzes its genres, keywords, cast, director, and plot overview, then surfaces the ten most similar movies a viewer is likely to enjoy. The finished product is wrapped in an interactive **Streamlit** web application that fetches live movie posters and metadata from the TMDB REST API, giving the project a production-quality feel that is immediately accessible in a browser with a single command.
 
-Recommendation engines are among the most commercially impactful applications of machine learning — they drive content discovery at Netflix, Spotify, YouTube, and Amazon. Building one from scratch demonstrates end-to-end ML engineering: data acquisition, exploratory analysis, feature engineering, model training, serialization, and UI delivery. For a portfolio, this project communicates that you can take a fuzzy business problem ("help users discover content they will love") all the way to a live, shareable demo — a signal hiring managers value highly.
+Recommendation engines are among the most commercially impactful applications of machine learning they drive content discovery at Netflix, Spotify, YouTube, and Amazon. Building one from scratch demonstrates end-to-end ML engineering: data acquisition, exploratory analysis, feature engineering, model training, serialization, and UI delivery. For a portfolio, this project communicates that you can take a fuzzy business problem ("help users discover content they will love") all the way to a live, shareable demo a signal hiring managers value highly.
 
 The underlying algorithm is **content-based filtering** powered by **cosine similarity** on **CountVectorizer** term-frequency vectors. No collaborative filtering or user history is required, which keeps the system self-contained and easy to reason about during interviews. The same mathematical principles scale to hybrid recommenders used in production, so the project serves as a credible foundation for more advanced work.
 
@@ -70,11 +70,11 @@ This repository is intentionally structured to reflect professional software eng
 
 ### Content-Based Filtering
 
-Content-based filtering is a recommendation strategy that recommends items **similar to what a user (or query item) already likes**, based solely on the properties of the items themselves — not on the behaviour of other users. In this project, each movie is described by a rich text "tag" string assembled from its plot overview, genres, keywords, top cast members, and director. The system then measures how textually similar any two movies are and returns the most similar ones.
+Content-based filtering is a recommendation strategy that recommends items **similar to what a user (or query item) already likes**, based solely on the properties of the items themselves not on the behaviour of other users. In this project, each movie is described by a rich text "tag" string assembled from its plot overview, genres, keywords, top cast members, and director. The system then measures how textually similar any two movies are and returns the most similar ones.
 
 The key advantage of content-based filtering over collaborative filtering is that it works **without any user data**. You can recommend movies for a cold-start user, or simply ask "what is most similar to *Inception*?" and get a meaningful answer immediately. This makes the approach perfect for a portfolio project: it is fully self-contained, easy to explain in an interview, and produces intuitive results that are easy to validate manually.
 
-The main limitation of pure content-based filtering is that it cannot discover **serendipitous** recommendations — if a movie's metadata is sparse or the tags are too similar across a genre, results can feel repetitive. This is why production systems typically combine content-based with collaborative signals in a hybrid model. That extension is listed in the Future Enhancements section.
+The main limitation of pure content-based filtering is that it cannot discover **serendipitous** recommendations if a movie's metadata is sparse or the tags are too similar across a genre, results can feel repetitive. This is why production systems typically combine content-based with collaborative signals in a hybrid model. That extension is listed in the Future Enhancements section.
 
 ### Feature Engineering
 
