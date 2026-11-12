@@ -1,0 +1,102 @@
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =============================================================================
+# Virtual Environments
+# =============================================================================
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# =============================================================================
+# Jupyter Notebook
+# =============================================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# =============================================================================
+# Secrets & Environment Variables
+# =============================================================================
+.env
+.env.local
+.env.*.local
+
+# Streamlit secrets (actual secrets, not the template)
+.streamlit/secrets.toml
+
+# =============================================================================
+# Project-Specific Large Files
+# =============================================================================
+# Large dataset CSV files (download from Kaggle manually)
+data/*.csv
+
+# Trained model pickle files (regenerate with: python src/recommendation_engine.py)
+models/*.pkl
+
+# =============================================================================
+# IDE & Editor Files
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# =============================================================================
+# Testing & Coverage
+# =============================================================================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# =============================================================================
+# Logging
+# =============================================================================
+*.log
+logs/
